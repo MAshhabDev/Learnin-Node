@@ -1,6 +1,7 @@
 import type { ServerResponse } from "http";
 
 export const sendResponse = (
+    // Declare The Type
   res: ServerResponse,
   statusCode: number,
 

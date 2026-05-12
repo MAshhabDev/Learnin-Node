@@ -5,6 +5,7 @@ import { parseBody } from "../Utility/parseBody";
 import { sendResponse } from "../Utility/sendResponse";
 
 export const productController = async (
+  // type declare
   req: IncomingMessage,
   res: ServerResponse,
 ) => {
