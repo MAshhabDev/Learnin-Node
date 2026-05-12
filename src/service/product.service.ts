@@ -4,9 +4,11 @@ import fs from "fs";
 const filePath = path.join(process.cwd(), "./src/database/db.json");
 
 export const readProduct = () => {
-  const product = fs.readFileSync(filePath, 'utf-8');
+  const product = fs.readFileSync(filePath, "utf-8");
 
   return JSON.parse(product);
+};
 
-  
+export const insertProduct = (payload: any) => {
+  fs.writeFileSync(filePath, JSON.stringify(payload));
 };
